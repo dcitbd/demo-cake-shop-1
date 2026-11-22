@@ -63,3 +63,8 @@
    ```
 
 4. **`.gitignore` নোট:** প্রজেক্টের রুটে একটি `.gitignore` ফাইল যুক্ত করা হয়েছে, যাতে SQLite-এর টেম্পোরারি ফাইল (`*.sqlite-wal`, `*.sqlite-shm`), ইমেইল লগ (`storage/emails/`) এবং সিস্টেম ক্যাশ ফাইল অযথা GitHub-এ আপলোড না হয়। *(নোট: GitHub Pages শুধু স্ট্যাটিক HTML/CSS/JS সাপোর্ট করে, PHP ও SQLite চালানোর জন্য cPanel, VPS বা PHP-সাপোর্টেড হোস্টিং ব্যবহার করতে হবে।)*
+
+> **গুরুত্বপূর্ণ (GitHub Pages লাইভ করার নিয়ম):**
+> - রিপোজিটরিতে পুশ করার সময় বাইরের `sweetdream-cakes/` ফোল্ডারটি নয়, বরং **ভেতরের সব ফাইল সরাসরি রিপোজিটরির রুটে** (`index.html`, `favicon.ico`, `.nojekyll`, `assets/`, `storage/` ইত্যাদি) পুশ করুন।
+> - GitHub Pages-এ (`https://dcitbd.github.io/`) স্বয়ংক্রিয়ভাবে `index.html` (স্ট্যাটিক শপ ও কার্ট) লাইভ হবে এবং `favicon.ico` 404 এরর আসবে না।
+> - পূর্ণাঙ্গ PHP + Admin Panel + SQLite3 চালাতে চাইলে যুক্ত করা `Dockerfile` দিয়ে **Render / Railway / Fly.io** অথবা **cPanel**-এ ডিপ্লয় করুন।

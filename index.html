@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetDream Cakes BD — প্রিমিয়াম কেক ও বেকারি শপ</title>
+  <meta name="description" content="তাজা ও হালাল প্রিমিয়াম কেক — জন্মদিন, বিয়ে, এনগেজমেন্ট ও কাস্টম ফটো কেক দ্রুত ডেলিভারি।">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="assets/images/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Hind Siliguri', sans-serif; background: #fff9fb; color: #3a2630; }
+    .gh-navbar { background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid #f5dce5; }
+    .brand-badge { background: linear-gradient(135deg, #d84b7a, #e89b3c); color: #fff; }
+    .hero-slide-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; }
+    .hero-overlay-caption { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(40,15,28,0.78) 0%, rgba(40,15,28,0.25) 65%, transparent 100%); border-radius: 20px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; color: #fff; }
+    .cake-card { background: #fff; border: 1px solid #f4dde6; border-radius: 16px; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; height: 100%; display: flex; flex-direction: column; }
+    .cake-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(216,75,122,0.12); }
+    .cake-card-img { width: 100%; height: 210px; object-fit: cover; background: #fff3f7; }
+    .cat-pill { border: 1px solid #ecc7d5; background: #fff; color: #5c3446; border-radius: 999px; padding: 6px 14px; font-size: 0.9rem; cursor: pointer; transition: all .15s; }
+    .cat-pill.active, .cat-pill:hover { background: #d84b7a; color: #fff; border-color: #d84b7a; }
+    .cake-footer { background: #2c1420; color: #f6e7ee; padding: 3rem 0 1.5rem; margin-top: 4rem; }
+    @media (max-width: 767px) { .hero-slide-img { height: 260px; } .hero-overlay-caption { padding: 1.25rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top gh-navbar py-2">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+      <img src="assets/images/icon-192.png" alt="SweetDream Cakes" width="40" height="40" class="rounded-3 border border-warning">
+      <div>
+        <span style="color:#b83260;">SweetDream Cakes</span>
+        <small class="d-block text-muted" style="font-size:11px;line-height:1;">প্রিমিয়াম কেক ও বেকারি</small>
+      </div>
+    </a>
+    <div class="d-flex align-items-center gap-2 ms-auto">
+      <button class="btn btn-outline-danger rounded-pill px-3 fw-semibold position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">
+        <i class="fa-solid fa-bag-shopping me-1"></i> কার্ট
+        <span id="cartCount" class="badge bg-danger rounded-pill ms-1">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  <!-- Hero Slider -->
+  <section class="mb-4">
+    <div id="heroCarousel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel" data-bs-interval="4500">
+      <div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+        <div class="carousel-item active position-relative">
+          <img src="assets/images/banners/banner-1.png" class="hero-slide-img" alt="SweetDream Cakes">
+          <div class="hero-overlay-caption">
+            <span class="badge bg-warning text-dark rounded-pill px-3 py-2 fw-bold mb-2 align-self-start">১০০% ফ্রেশ ও হালাল বেকারি</span>
+            <h1 class="fw-bold mb-2" style="max-width:560px;">প্রিয় মানুষের মুখে হাসি ফোটাতে সেরা প্রিমিয়াম কেক</h1>
+            <p class="mb-3 opacity-90" style="max-width:500px;">জন্মদিন, বিয়ে, অ্যানিভার্সারি ও কাস্টম ফটো কেক — অর্ডারের পর ফ্রেশ বেক ও ২-৪ ঘন্টায় ডেলিভারি।</p>
+            <div>
+              <a href="#catalog" class="btn btn-warning btn-lg rounded-pill fw-bold px-4">
+                <i class="fa-solid fa-cake-candles me-2"></i>কেক দেখুন
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="assets/images/banners/banner-2.png" class="hero-slide-img" alt="Custom Cakes">
+          <div class="hero-overlay-caption">
+            <span class="badge bg-light text-dark rounded-pill px-3 py-2 fw-bold mb-2 align-self-start">স্পেশাল অফার</span>
+            <h2 class="fw-bold mb-2" style="max-width:560px;">প্রতিটি কেকে ২০% পর্যন্ত ডিসকাউন্ট!</h2>
+            <p class="mb-3 opacity-90" style="max-width:500px;">বেলজিয়ান চকলেট, রেড ভেলভেট, বেন্টো কেক ও সুগার-ফ্রি কিটো কেকের বিশাল কালেকশন।</p>
+            <div>
+              <a href="#catalog" class="btn btn-warning btn-lg rounded-pill fw-bold px-4">অর্ডার করুন</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Search -->
+  <section id="catalog" class="mb-4">
+    <div class="row g-3 align-items-center mb-3">
+      <div class="col-md-5">
+        <h4 class="fw-bold mb-0"><i class="fa-solid fa-cake-candles text-danger me-2"></i>আমাদের কেক কালেকশন (<span id="totalCount">0</span>)</h4>
+      </div>
+      <div class="col-md-7">
+        <div class="input-group">
+          <span class="input-group-text bg-white border-end-0 rounded-start-pill ps-3"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+          <input type="text" id="searchInput" class="form-control border-start-0 rounded-end-pill" placeholder="কেকের নাম, ফ্লেভার বা SKU দিয়ে খুঁজুন...">
+        </div>
+      </div>
+    </div>
+    <div id="categoryPills" class="d-flex flex-wrap gap-2 mb-4"></div>
+    <div id="productGrid" class="row g-3">
+      <div class="col-12 text-center py-5 text-muted">লোড হচ্ছে...</div>
+    </div>
+  </section>
+</main>
+
+<!-- Cart Drawer -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold"><i class="fa-solid fa-bag-shopping text-danger me-2"></i>আপনার অর্ডার কার্ট</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1 overflow-auto"></div>
+    <div class="border-top pt-3 mt-3">
+      <div class="d-flex justify-content-between fw-bold fs-5 mb-3">
+        <span>মোট মূল্য:</span>
+        <span class="text-danger">৳<span id="cartTotal">0</span></span>
+      </div>
+      <button id="whatsappOrderBtn" class="btn btn-success w-100 rounded-pill fw-bold py-2">
+        <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp-এ অর্ডার পাঠান
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="modalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <img id="modalImg" src="" alt="" class="w-100 rounded-3 mb-3" style="height:240px;object-fit:cover;">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span id="modalCat" class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2"></span>
+          <span id="modalSku" class="small text-muted"></span>
+        </div>
+        <div class="fs-4 fw-bold text-danger mb-3" id="modalPrice"></div>
+        <button id="modalAddBtn" class="btn btn-danger w-100 rounded-pill fw-bold py-2">
+          <i class="fa-solid fa-cart-plus me-2"></i>কার্টে যোগ করুন
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="cake-footer">
+  <div class="container text-center">
+    <h5 class="fw-bold text-white mb-1">SweetDream Cakes BD</h5>
+    <p class="small opacity-75 mb-2">তাজা ও হালাল প্রিমিয়াম কেক — GitHub Pages স্ট্যাটিক ক্যাটালগ</p>
+    <p class="small opacity-50 mb-0">পূর্ণাঙ্গ PHP + Admin Panel ও SQLite ভার্সনের জন্য cPanel বা Docker (Dockerfile) ব্যবহার করুন।</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let allProducts = [];
+let activeCategory = 'all';
+let cart = JSON.parse(localStorage.getItem('sdc_static_cart') || '[]');
+
+function parseImg(imagesJson) {
+  try {
+    const arr = JSON.parse(imagesJson);
+    return (Array.isArray(arr) && arr.length) ? arr[0] : 'assets/images/icon-192.png';
+  } catch (e) { return 'assets/images/icon-192.png'; }
+}
+
+function renderCategories() {
+  const cats = ['all', ...new Set(allProducts.map(p => p.category_name).filter(Boolean))];
+  const wrap = document.getElementById('categoryPills');
+  wrap.innerHTML = cats.map(c => `
+    <button class="cat-pill ${activeCategory === c ? 'active' : ''}" onclick="setCategory('${c.replace(/'/g, "\\'")}')">
+      ${c === 'all' ? 'সকল কেক' : c}
+    </button>
+  `).join('');
+}
+
+function setCategory(cat) {
+  activeCategory = cat;
+  renderCategories();
+  renderProducts();
+}
+
+function renderProducts() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const filtered = allProducts.filter(p => {
+    const catOk = activeCategory === 'all' || p.category_name === activeCategory;
+    const qOk = !q || (p.name && p.name.toLowerCase().includes(q)) || (p.sku && p.sku.toLowerCase().includes(q)) || (p.brand_name && p.brand_name.toLowerCase().includes(q));
+    return catOk && qOk;
+  });
+  document.getElementById('totalCount').textContent = filtered.length;
+  const grid = document.getElementById('productGrid');
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="col-12 text-center py-5 text-muted">কোনো কেক পাওয়া যায়নি।</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(p => {
+    const img = parseImg(p.images_json);
+    const price = Number(p.discount_price || p.regular_price);
+    const reg = Number(p.regular_price);
+    return `
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="cake-card">
+          <div class="position-relative">
+            <img src="${img}" class="cake-card-img" alt="${p.name}" loading="lazy" onclick="openProduct(${p.id})" style="cursor:pointer;">
+            ${p.discount_percent > 0 ? `<span class="badge bg-danger position-absolute top-0 start-0 m-2 rounded-pill">-${p.discount_percent}%</span>` : ''}
+          </div>
+          <div class="p-3 d-flex flex-column flex-grow-1">
+            <small class="text-muted mb-1">${p.category_name || ''}</small>
+            <h6 class="fw-bold mb-2 flex-grow-1" style="cursor:pointer;" onclick="openProduct(${p.id})">${p.name}</h6>
+            <div class="d-flex align-items-baseline gap-2 mb-2">
+              <span class="fw-bold text-danger fs-5">৳${price}</span>
+              ${reg > price ? `<small class="text-decoration-line-through text-muted">৳${reg}</small>` : ''}
+            </div>
+            <button class="btn btn-outline-danger btn-sm rounded-pill w-100 fw-semibold" onclick="addToCart(${p.id})">
+              <i class="fa-solid fa-cart-plus me-1"></i>কার্টে নিন
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function openProduct(id) {
+  const p = allProducts.find(x => x.id === id);
+  if (!p) return;
+  document.getElementById('modalTitle').textContent = p.name;
+  document.getElementById('modalImg').src = parseImg(p.images_json);
+  document.getElementById('modalCat').textContent = p.category_name || 'Cake';
+  document.getElementById('modalSku').textContent = 'SKU: ' + (p.sku || '');
+  document.getElementById('modalPrice').textContent = '৳' + Number(p.discount_price || p.regular_price);
+  document.getElementById('modalAddBtn').onclick = () => {
+    addToCart(p.id);
+    bootstrap.Modal.getInstance(document.getElementById('productModal')).hide();
+  };
+  new bootstrap.Modal(document.getElementById('productModal')).show();
+}
+
+function addToCart(id) {
+  const p = allProducts.find(x => x.id === id);
+  if (!p) return;
+  const existing = cart.find(x => x.id === id);
+  if (existing) existing.qty += 1;
+  else cart.push({ id: p.id, name: p.name, price: Number(p.discount_price || p.regular_price), img: parseImg(p.images_json), qty: 1 });
+  saveCart();
+}
+
+function updateQty(id, delta) {
+  const item = cart.find(x => x.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(x => x.id !== id);
+  saveCart();
+}
+
+function saveCart() {
+  localStorage.setItem('sdc_static_cart', JSON.stringify(cart));
+  renderCart();
+}
+
+function renderCart() {
+  const count = cart.reduce((s, x) => s + x.qty, 0);
+  const total = cart.reduce((s, x) => s + x.price * x.qty, 0);
+  document.getElementById('cartCount').textContent = count;
+  document.getElementById('cartTotal').textContent = total;
+  const box = document.getElementById('cartItems');
+  if (!cart.length) {
+    box.innerHTML = '<p class="text-center text-muted py-4">আপনার কার্ট খালি আছে।</p>';
+    return;
+  }
+  box.innerHTML = cart.map(item => `
+    <div class="d-flex align-items-center gap-2 border-bottom py-2">
+      <img src="${item.img}" width="52" height="52" class="rounded-2 object-fit-cover">
+      <div class="flex-grow-1">
+        <div class="small fw-bold">${item.name}</div>
+        <div class="small text-danger fw-semibold">৳${item.price} × ${item.qty}</div>
+      </div>
+      <div class="btn-group btn-group-sm">
+        <button class="btn btn-outline-secondary" onclick="updateQty(${item.id}, -1)">-</button>
+        <button class="btn btn-outline-secondary" onclick="updateQty(${item.id}, 1)">+</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+document.getElementById('whatsappOrderBtn').addEventListener('click', () => {
+  if (!cart.length) return alert('অনুগ্রহ করে আগে কার্টে কেক যোগ করুন।');
+  const lines = cart.map(i => `• ${i.name} (${i.qty}টি) - ৳${i.price * i.qty}`).join('%0A');
+  const total = cart.reduce((s, x) => s + x.price * x.qty, 0);
+  const msg = `আসসালামু আলাইকুম, আমি SweetDream Cakes থেকে নিচের কেকগুলো অর্ডার করতে চাই:%0A${lines}%0Aমোট: ৳${total}`;
+  window.open(`https://wa.me/?text=${msg}`, '_blank');
+});
+
+document.getElementById('searchInput').addEventListener('input', renderProducts);
+
+fetch('storage/cache/products_index.json')
+  .then(r => r.json())
+  .then(data => {
+    allProducts = data.items || [];
+    renderCategories();
+    renderProducts();
+    renderCart();
+  })
+  .catch(() => {
+    document.getElementById('productGrid').innerHTML = '<div class="col-12 text-center text-danger py-4">প্রোডাক্ট ডাটা লোড করা যায়নি।</div>';
+  });
+</script>
+</body>
+</html>
