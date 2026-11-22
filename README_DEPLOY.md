@@ -1,0 +1,26 @@
+# 🎂 SweetDream Cakes BD — লাইভ ডিপ্লয়মেন্ট গাইড (cPanel & XAMPP)
+
+## ১. সুপার-ফাস্ট আর্কিটেকচার
+- **Backend:** PHP 8+ (PHP 7.4+ Compatible) + SQLite3 (WAL Mode + Memory Cache — জিরো MySQL কনফিগারেশন, ইনস্ট্যান্ট লাইভ!)
+- **Python Turbo Engine:** `python_engine/speed_optimizer.py` (JSON ক্যাশ প্রি-ওয়ার্ম ও Facebook Shop Catalog CSV জেনারেটর)
+- **Frontend:** Bootstrap 5.3 + Font Awesome 6 + Hind Siliguri + PWA (`manifest.json` + `sw.js`)
+
+## ২. cPanel (`public_html`) বা XAMPP-এ লাইভ করার নিয়ম
+1. `sweetdream-cakes-ecommerce-complete.zip` ফাইলটি আপনার cPanel-এর `public_html` (অথবা XAMPP-এর `htdocs/sweetdream-cakes/`) ফোল্ডারে Extract করুন।
+2. `storage/` এবং `assets/images/uploads/` ফোল্ডারের পারমিশন `775` নিশ্চিত করুন।
+3. সরাসরি ব্রাউজারে আপনার ডোমেইন ভিজিট করুন — ওয়েবসাইট, ৬৪টি কেক প্রোডাক্ট, ১৮টি ডেমো অর্ডার ও ডাটাবেজ সাথে সাথেই লাইভ হয়ে যাবে!
+
+## ৩. ডেমো লগইন তথ্য
+- **মাস্টার অ্যাডমিন প্যানেল (`/admin/index.php`):**
+  - Email: `admin@sweetdreamcakes.com`
+  - Password: `Admin@123`
+- **কাস্টমার ড্যাশবোর্ড (`/customer/dashboard.php`):**
+  - Email: `customer@sweetdreamcakes.com`
+  - Password: `Customer@123`
+
+## ৪. মোবাইল ও ইমেইল অর্ডার নোটিফিকেশন
+- **ডিজিটাল HTML ইমেইল:** নতুন অর্ডার এলেই অ্যাডমিন ও কাস্টমারের ইমেইলে ডিজিটাল ইনভয়েস মেইল চলে যাবে এবং `storage/emails/` ফোল্ডারে HTML প্রিভিউ সেভ থাকবে।
+- **মোবাইল পুশ নোটিফিকেশন:** হেডার বা অ্যাডমিন প্যানেলের 🔔 বাটনে ক্লিক করে ব্রাউজার/মোবাইল নোটিফিকেশন Allow করুন। এছাড়া **Admin -> ওয়েবসাইট তথ্য আপডেট**-এ Telegram Bot Token ও Chat ID দিলে প্রতি অর্ডারে সাথে সাথে মোবাইলে Telegram অ্যালার্ট যাবে।
+
+## ৫. ফেসবুক পেজ সেটআপ কিট
+- `facebook-page-setup/` ফোল্ডারে লোগো (`logo-square-1024.png`, `logo.svg`), কভার ব্যানার (`fb-cover-banner-1640x624.png`) এবং সম্পূর্ণ বাংলা SEO গাইড (`FB_PAGE_SETUP_GUIDE.html`) দেওয়া আছে।
